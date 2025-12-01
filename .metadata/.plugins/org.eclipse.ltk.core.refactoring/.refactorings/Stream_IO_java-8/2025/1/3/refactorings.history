@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move package &apos;com.ankur.Day10.p4.Stream&apos; to &apos;Stream_API_Interview_Questions_Ashok_it/src&apos;&#x0D;&#x0A;- Original project: &apos;Stream_IO_java-8&apos;&#x0D;&#x0A;- Destination element: &apos;Stream_API_Interview_Questions_Ashok_it/src&apos;&#x0D;&#x0A;- Original element: &apos;Stream_IO_java-8/src/com.ankur.Day10.p4.Stream&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move package" destination="=Stream_API_Interview_Questions_Ashok_it/src" element1="/src&lt;com.ankur.Day10.p4.Stream" flags="589830" fragments="1" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.movePackages" stamp="1737196477430" version="1.0"/>
+</session>

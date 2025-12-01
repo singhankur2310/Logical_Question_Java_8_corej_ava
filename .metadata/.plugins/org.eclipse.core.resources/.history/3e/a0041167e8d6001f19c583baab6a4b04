@@ -1,0 +1,93 @@
+package com.ankur.it;
+
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.List;
+import java.util.Optional;
+
+class Employee1{
+	
+	Integer id;
+	String name;
+	Double salary;
+	Integer yearOfJoining;
+	String city;
+	
+	
+	public Employee1(Integer id ,String name,Double salary,Integer yearOfJoining ,String city) {
+		this.id=id;
+		this.name=name;
+		this.salary=salary;
+		this.yearOfJoining=yearOfJoining;
+		this.city=city;
+	}
+	@Override
+	public String toString() {
+		return "Employee1 [id = "+id+" , Name ="+name+" , Age = "+salary+" , yearOfJoining = "+yearOfJoining+" , City = "+city+"]";
+	}
+	
+	public Integer getId() {
+		return id;
+		
+	}
+	public void setID(Integer id) {
+		this.id=id;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getName() {
+		return name;
+		
+	}
+	public void setSalay(Double salary) {
+		this.salary=salary;
+	}
+	public Double getSalary() {
+	   return salary;
+	}
+	public void setYearOfJoining(Integer yearOfJoining) {
+		this.yearOfJoining=yearOfJoining;
+		
+	}
+	public Integer getYearOfJoining() {
+		return yearOfJoining;
+	}
+	
+	public String getCity() {
+		return city;
+	}
+	public void setCity(String city) {
+		this.city=city;
+	}
+	
+	
+	
+}
+
+
+public class Demo2 {
+			public static void main(String[] args) {
+			 Employee1 e1 = new Employee1(1, "Diya", 47000.21, 2015, "Mumbai");
+			 Employee1 e2 = new Employee1(2, "RUpesh", 77000.21, 2012, "Pune");
+			 Employee1 e3 = new Employee1(3, "Kanika", 95000.21, 2010, "Bhoapl");
+			 Employee1 e4 = new Employee1(4, "Sanjay", 15000.21, 2024, "Delhi");
+			 Employee1 e5 = new Employee1(5, "Ankur", 55000.21, 2025, "Noida");
+			 Employee1 e6 = new Employee1(6, "Roli", 13000.21, 2018, "Mumbai");
+			 Employee1 e7 = new Employee1(7, "Prity", 38000.21, 2010, "Noida");
+			 Employee1 e8 = new Employee1(8, "Komal", 32000.21, 2016, "Delhi");
+			 Employee1 e9 = new Employee1(9, "Radhika", 65000.21, 2021, "Pune");
+			 
+			 List<Employee1> emps = Arrays.asList(e1,e2,e3,e4,e5,e6,e7,e8,e9);
+			 // 2nd highest salary
+			 
+			 Optional<Employee1> empsecond = emps.stream().sorted(Comparator.comparingDouble(Employee1::getSalary).reversed()).
+					 							skip(03).
+					 							findFirst();
+			 if(empsecond.isPresent()) {
+				 System.out.println(empsecond.get().salary);
+				 
+			 }
+				
+			}
+}

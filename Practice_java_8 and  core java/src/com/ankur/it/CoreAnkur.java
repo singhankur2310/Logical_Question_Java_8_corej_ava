@@ -1,0 +1,43 @@
+package com.ankur.it;
+
+ abstract class I1{
+	//public abstract void m1();
+	
+	public void m1(Integer i1) {
+		System.out.println("m1 Integer Print :: "+i1);
+	}
+	public I1() {
+		
+	}
+	public I1(Integer i1) {
+		}
+}
+
+public class CoreAnkur{
+	
+	public static void main(String[] args) {
+		//using Anonymous Inner class
+		
+		//I1 i =  new I1(){
+		//	@Override
+		//	public void m1() {
+			//	System.out.println("Hello Ankur m1()----");
+			//}
+		//};
+		//i.m1();
+		
+		I1 i2 = new I1(){
+			@Override
+			public void m1(Integer i2) {
+				System.out.println("Integer :: i2 :: "+i2);
+			}
+		};
+		
+
+		i2.m1(101);
+		
+	
+
+
+}
+}

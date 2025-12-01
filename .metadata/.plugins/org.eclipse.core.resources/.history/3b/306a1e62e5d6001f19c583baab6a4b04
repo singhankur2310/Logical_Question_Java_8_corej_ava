@@ -1,0 +1,33 @@
+package com.ankur.it;
+
+
+class Employee{
+	
+	Integer id;
+	String name;
+	Double age;
+	Integer yearOfJoining;
+	String city;
+	
+	
+	public Employee(Integer id ,String name,Double age,Integer yearOfJoining ,String city) {
+		this.id=id;
+		this.name=name;
+		this.age=age;
+		this.yearOfJoining=yearOfJoining;
+		this.city=city;
+	}
+	@Override
+	public String toString() {
+		return "Employee [id = "+id+" , Name ="+name+" , Age = "+age+" , yearOfJoining = "+yearOfJoining+" , City = "+city+"]";
+	}
+	
+	
+}
+
+
+public class Demo2 {
+			public static void main(String[] args) {
+				
+			}
+}

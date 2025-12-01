@@ -1,0 +1,21 @@
+package com.ankur.it;
+class Ankur{
+	public static void m1() {
+		System.out.println("Hello Ankur >>>m1");
+	}
+}
+public class runnable_using_java8 {
+	public static void main(String[] args) {
+		Runnable r = ()->{
+			System.out.println("Hey Ankur");
+		};
+		r.run();
+		Runnable rn = Ankur::m1;
+				
+				
+				
+				
+		
+	}
+
+}
